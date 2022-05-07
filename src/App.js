@@ -1,23 +1,108 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./app.scss";
+import FulgentScreen from "./img/fulgent-screen.png";
+import SellerationScreen from "./img/selleration-screen.png";
+import HarmonicScreen from "./img/harmonic-screen.png";
+import SNCScreen from "./img/snc-screen.png";
+import TravelScreen from "./img/travel-screen.png";
+import AptensioScreen from "./img/aptensioxr-screen.png";
+import BreakawayScreen from "./img/breakaway-screen.png";
+import PNCLogo from "./img/pnc-logo.png";
+import MetlifeLogo from "./img/metlife-logo.png";
+import ProgressiveLogo from "./img/progressive-logo.png";
+import DiscoverLogo from "./img/discover-logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {/* header */}
+      <div className="header">
+        <div className="title">
+          <h1>
+            <b>richard pires</b>
+          </h1>
+          <h2>front-end developer</h2>
+        </div>
+
+        {/* links */}
+        <div className="links">
+          {/* github */}
+          <a href="https://github.com/statelessrich" target="_blank" rel="noreferrer">
+            {/* Github */}
+            <FontAwesomeIcon icon={faGithubSquare} />
+          </a>
+
+          {/* linkedin */}
+          <a href="http://www.linkedin.com/in/richardpires" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+
+          {/* resume */}
+          <a
+            href="https://docs.google.com/document/d/1-OM16Sjok0vpRhkm3dN2ydVgxg9XyWP5/edit?usp=sharing&ouid=108171729404283277365&rtpof=true&sd=true"
+            className="btn text-center resume-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faFileLines} />
+            &nbsp;resume
+          </a>
+        </div>
+      </div>
+
+      {/* portfolio */}
+      <div className="portfolio">
+        <h2>portfolio</h2>
+
+        {/* harmonic */}
+        <div className="screen">
+          <img src={HarmonicScreen} alt="harmonic financial technologies" />
+        </div>
+
+        {/* snc */}
+        <div className="screen">
+          <img src={SNCScreen} alt="safety net community" />
+        </div>
+
+        {/* fulgent */}
+        <div className="screen">
+          <img src={FulgentScreen} alt="fulgent" />
+        </div>
+
+        {/* selleration */}
+        <div className="screen">
+          <img src={SellerationScreen} alt="selleration" />
+        </div>
+
+        {/* aptensio xr */}
+        <div className="screen">
+          <img src={AptensioScreen} alt="aptensio xr" />
+        </div>
+
+        {/* amgen */}
+        <div className="screen">
+          <img src={BreakawayScreen} alt="amgen" />
+        </div>
+
+        {/* travel site */}
+        <div className="screen">
+          <img src={TravelScreen} alt="travel site" />
+        </div>
+
+        {/* other clients */}
+        <div className="other">
+          <h2>other clients</h2>
+          <div className="list">
+            <img src={PNCLogo} alt="pnc"></img>
+            <img src={MetlifeLogo} alt="metlife"></img>
+            <img src={ProgressiveLogo} alt="progressive"></img>
+            <img src={DiscoverLogo} alt="discover"></img>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

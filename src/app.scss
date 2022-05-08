@@ -1,3 +1,5 @@
+$mobile: 768px;
+
 * {
   padding: 0;
   margin: 0;
@@ -90,7 +92,7 @@ body {
         width: 75%;
         border: 1px solid rgb(239, 239, 239);
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile) {
           width: 95%;
         }
       }

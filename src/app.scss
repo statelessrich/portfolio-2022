@@ -16,7 +16,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
 
   .header {
     width: 100%;
@@ -42,7 +41,7 @@ body {
       margin: 30px auto 0 auto;
       display: grid;
       align-items: center;
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto auto auto auto;
       gap: 20px;
 
       a {
@@ -70,31 +69,40 @@ body {
 
   .portfolio {
     margin-top: 50px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     h2 {
+      text-align: center;
       padding-bottom: 20px;
       font-weight: normal;
     }
 
+    .screens {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     .screen {
       width: 100%;
-      max-width: 1000px;
-      margin-bottom: 50px;
+      max-width: 500px;
+      margin: 20px;
       display: flex;
       justify-content: center;
 
-      img {
-        width: 75%;
-        border: 1px solid rgb(239, 239, 239);
+      @media (max-width: $mobile) {
+        margin: 0 0 30px 0;
 
-        @media (max-width: $mobile) {
+        img {
           width: 95%;
         }
+      }
+
+      img {
+        border: 1px solid rgb(239, 239, 239);
+        width: 100%;
       }
     }
 
@@ -102,6 +110,7 @@ body {
       text-align: center;
       width: 100%;
       max-width: 500px;
+      margin: 20px auto 0 auto;
 
       .list {
         display: flex;
@@ -111,10 +120,18 @@ body {
         justify-content: center;
 
         img {
-          margin: 0 auto;
           padding: 20px;
+          width: 200px;
         }
       }
     }
+  }
+
+  .footer {
+    margin-top: 100px;
+    background-color: #f1f1f1;
+    height: 25px;
+    width: 100%;
+    display: block;
   }
 }

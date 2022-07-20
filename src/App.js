@@ -7,12 +7,13 @@ import SNCScreen from "./img/snc-screen.png";
 import TravelScreen from "./img/travel-screen.png";
 import AptensioScreen from "./img/aptensioxr-screen.png";
 import BreakawayScreen from "./img/breakaway-screen.png";
+import PlaywhatScreen from "./img/playwhat-screen.png";
 import PNCLogo from "./img/pnc-logo.png";
 import MetlifeLogo from "./img/metlife-logo.png";
 import ProgressiveLogo from "./img/progressive-logo.png";
 import DiscoverLogo from "./img/discover-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { faFileLines, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
@@ -31,13 +32,17 @@ function App() {
         <div className="links">
           {/* github */}
           <a href="https://github.com/statelessrich" target="_blank" rel="noreferrer">
-            {/* Github */}
             <FontAwesomeIcon icon={faGithubSquare} />
           </a>
 
           {/* linkedin */}
           <a href="http://www.linkedin.com/in/richardpires" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+
+          {/* email */}
+          <a href="mailto:richardjpires@gmail.com" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
 
           {/* resume */}
@@ -57,39 +62,46 @@ function App() {
       <div className="portfolio">
         <h2>portfolio</h2>
 
-        {/* harmonic */}
-        <div className="screen">
-          <img src={HarmonicScreen} alt="harmonic financial technologies" />
-        </div>
+        <div className="screens">
+          {/* harmonic */}
+          <div className="screen">
+            <img src={HarmonicScreen} alt="harmonic financial technologies" />
+          </div>
 
-        {/* snc */}
-        <div className="screen">
-          <img src={SNCScreen} alt="safety net community" />
-        </div>
+          {/* snc */}
+          <div className="screen">
+            <img src={SNCScreen} alt="safety net community" />
+          </div>
 
-        {/* fulgent */}
-        <div className="screen">
-          <img src={FulgentScreen} alt="fulgent" />
-        </div>
+          {/* fulgent */}
+          <div className="screen">
+            <img src={FulgentScreen} alt="fulgent" />
+          </div>
 
-        {/* selleration */}
-        <div className="screen">
-          <img src={SellerationScreen} alt="selleration" />
-        </div>
+          {/* selleration */}
+          <div className="screen">
+            <img src={SellerationScreen} alt="selleration" />
+          </div>
 
-        {/* aptensio xr */}
-        <div className="screen">
-          <img src={AptensioScreen} alt="aptensio xr" />
-        </div>
+          {/* aptensio xr */}
+          <div className="screen">
+            <img src={AptensioScreen} alt="aptensio xr" />
+          </div>
 
-        {/* amgen */}
-        <div className="screen">
-          <img src={BreakawayScreen} alt="amgen" />
-        </div>
+          {/* amgen */}
+          <div className="screen">
+            <img src={BreakawayScreen} alt="amgen" />
+          </div>
 
-        {/* travel site */}
-        <div className="screen">
-          <img src={TravelScreen} alt="travel site" />
+          {/* travel site */}
+          <div className="screen">
+            <img src={TravelScreen} alt="travel site" />
+          </div>
+
+          {/* playwhat */}
+          <div className="screen">
+            <img src={PlaywhatScreen} alt="playwhat" />
+          </div>
         </div>
 
         {/* other clients */}
@@ -103,6 +115,9 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* footer */}
+      <div className="footer"></div>
     </div>
   );
 }

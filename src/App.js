@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.scss";
+import "./app.css";
 import FulgentScreen from "./img/fulgent-screen.png";
 import SellerationScreen from "./img/selleration-screen.png";
 import HarmonicScreen from "./img/harmonic-screen.png";
@@ -8,6 +8,7 @@ import TravelScreen from "./img/travel-screen.png";
 import AptensioScreen from "./img/aptensioxr-screen.png";
 import BreakawayScreen from "./img/breakaway-screen.png";
 import PlaywhatScreen from "./img/playwhat-screen.png";
+import PlaywhatAIScreen from "./img/playwhatai-screen.png";
 import PNCLogo from "./img/pnc-logo.png";
 import MetlifeLogo from "./img/metlife-logo.png";
 import ProgressiveLogo from "./img/progressive-logo.png";
@@ -60,9 +61,30 @@ function App() {
 
       {/* portfolio */}
       <div className="portfolio">
+        {/* other clients */}
+        <div className="other">
+          <h2>clients</h2>
+          <div className="list">
+            <img src={PNCLogo} alt="pnc"></img>
+            <img src={MetlifeLogo} alt="metlife"></img>
+            <img src={ProgressiveLogo} alt="progressive"></img>
+            <img src={DiscoverLogo} alt="discover"></img>
+          </div>
+        </div>
+
         <h2>portfolio</h2>
 
         <div className="screens">
+          {/* playwhatai */}
+          <div className="screen">
+            <img src={PlaywhatAIScreen} alt="playwhatai" />
+          </div>
+
+          {/* playwhat */}
+          <div className="screen">
+            <img src={PlaywhatScreen} alt="playwhat" />
+          </div>
+
           {/* harmonic */}
           <div className="screen">
             <img src={HarmonicScreen} alt="harmonic financial technologies" />
@@ -96,22 +118,6 @@ function App() {
           {/* travel site */}
           <div className="screen">
             <img src={TravelScreen} alt="travel site" />
-          </div>
-
-          {/* playwhat */}
-          <div className="screen">
-            <img src={PlaywhatScreen} alt="playwhat" />
-          </div>
-        </div>
-
-        {/* other clients */}
-        <div className="other">
-          <h2>other clients</h2>
-          <div className="list">
-            <img src={PNCLogo} alt="pnc"></img>
-            <img src={MetlifeLogo} alt="metlife"></img>
-            <img src={ProgressiveLogo} alt="progressive"></img>
-            <img src={DiscoverLogo} alt="discover"></img>
           </div>
         </div>
       </div>

@@ -1,5 +1,15 @@
 $mobile: 768px;
 
+// Montserrat font
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap");
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +18,7 @@ $mobile: 768px;
 
 body {
   color: #484848;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -101,8 +111,8 @@ body {
       }
 
       img {
-        border: 1px solid rgb(239, 239, 239);
         width: 100%;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
     }
 
@@ -110,7 +120,8 @@ body {
       text-align: center;
       width: 100%;
       max-width: 500px;
-      margin: 20px auto 0 auto;
+      margin-inline: auto;
+      margin-bottom: 50px;
 
       .list {
         display: flex;

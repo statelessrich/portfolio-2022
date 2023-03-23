@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9e6105d.css",
+    "main.css": "/static/css/main.0718d426.css",
     "main.js": "/static/js/main.fd0ea7aa.js",
     "static/js/496.91e62643.chunk.js": "/static/js/496.91e62643.chunk.js",
     "static/media/playwhat-screen.png": "/static/media/playwhat-screen.f1ac6fb1c807369880da.png",
@@ -13,12 +13,12 @@
     "static/media/aptensioxr-screen.png": "/static/media/aptensioxr-screen.11be71d4a851ba896c7a.png",
     "static/media/snc-screen.png": "/static/media/snc-screen.edf739f2413e13601ad3.png",
     "index.html": "/index.html",
-    "main.a9e6105d.css.map": "/static/css/main.a9e6105d.css.map",
+    "main.0718d426.css.map": "/static/css/main.0718d426.css.map",
     "main.fd0ea7aa.js.map": "/static/js/main.fd0ea7aa.js.map",
     "496.91e62643.chunk.js.map": "/static/js/496.91e62643.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9e6105d.css",
+    "static/css/main.0718d426.css",
     "static/js/main.fd0ea7aa.js"
   ]
 }

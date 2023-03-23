@@ -48,7 +48,7 @@ function App() {
 
           {/* resume */}
           <a
-            href="https://docs.google.com/document/d/17VhtHY2WHnXN_xwfmoPisekOIoQfvVJ1/edit?usp=sharing&ouid=104507859562980392117&rtpof=true&sd=true"
+            href="https://docs.google.com/document/d/1a-UcGdXji1RwLWcIUMeqCZX7Fq3hrd6P/edit?usp=sharing&ouid=104507859562980392117&rtpof=true&sd=true"
             className="btn text-center resume-link"
             target="_blank"
             rel="noreferrer"

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a9e6105d.css",
+    "main.js": "/static/js/main.fd0ea7aa.js",
+    "static/js/496.91e62643.chunk.js": "/static/js/496.91e62643.chunk.js",
+    "static/media/playwhat-screen.png": "/static/media/playwhat-screen.f1ac6fb1c807369880da.png",
+    "static/media/travel-screen.png": "/static/media/travel-screen.2b4ceef5100ddcfcce34.png",
+    "static/media/playwhatai-screen.png": "/static/media/playwhatai-screen.3be84c60a57096dd0af3.png",
+    "static/media/harmonic-screen.png": "/static/media/harmonic-screen.64e71179dac67af5ff90.png",
+    "static/media/breakaway-screen.png": "/static/media/breakaway-screen.aabf0f6066eee1824dc2.png",
+    "static/media/fulgent-screen.png": "/static/media/fulgent-screen.0815c9a298908aca37d7.png",
+    "static/media/selleration-screen.png": "/static/media/selleration-screen.c62165c072eacb48f24e.png",
+    "static/media/aptensioxr-screen.png": "/static/media/aptensioxr-screen.11be71d4a851ba896c7a.png",
+    "static/media/snc-screen.png": "/static/media/snc-screen.edf739f2413e13601ad3.png",
+    "index.html": "/index.html",
+    "main.a9e6105d.css.map": "/static/css/main.a9e6105d.css.map",
+    "main.fd0ea7aa.js.map": "/static/js/main.fd0ea7aa.js.map",
+    "496.91e62643.chunk.js.map": "/static/js/496.91e62643.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9e6105d.css",
+    "static/js/main.fd0ea7aa.js"
+  ]
+}

@@ -70,7 +70,6 @@ body {
 .app .portfolio h2 {
   text-align: center;
   padding-bottom: 20px;
-  font-weight: normal;
 }
 .app .portfolio .screens {
   width: 100%;
@@ -86,6 +85,7 @@ body {
   margin: 20px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 @media (max-width: 768px) {
   .app .portfolio .screen {
@@ -95,9 +95,28 @@ body {
     width: 95%;
   }
 }
+.app .portfolio .screen:has(.legend):hover img, .app .portfolio .screen:has(.legend):active img {
+  filter: blur(4px);
+  cursor: pointer;
+}
+.app .portfolio .screen:has(.legend):hover .legend, .app .portfolio .screen:has(.legend):active .legend {
+  display: flex;
+}
 .app .portfolio .screen img {
   width: 100%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.app .portfolio .screen .legend {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.879);
 }
 .app .portfolio .other {
   text-align: center;

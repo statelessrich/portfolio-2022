@@ -9,6 +9,7 @@ import AptensioScreen from "./img/aptensioxr-screen.png";
 import BreakawayScreen from "./img/breakaway-screen.png";
 import PlaywhatScreen from "./img/playwhat-screen.png";
 import PlaywhatAIScreen from "./img/playwhatai-screen.png";
+import VocabifyScreen from "./img/vocabify-screen.png";
 import PNCLogo from "./img/pnc-logo.png";
 import MetlifeLogo from "./img/metlife-logo.png";
 import ProgressiveLogo from "./img/progressive-logo.png";
@@ -75,29 +76,75 @@ function App() {
         <h2>portfolio</h2>
 
         <div className="screens">
+          {/* vocabify */}
+          <div className="screen">
+            <img src={VocabifyScreen} alt="vocabify" />
+            <div className="legend">
+              OpenAI and speech recognition-powered vocabulary learning app built with React/Remix.
+              <br />
+              <br />
+              <a href="https://vocabify.vercel.app/" target="_blank" rel="noreferrer">
+                Demo
+              </a>
+            </div>
+          </div>
+
           {/* playwhatai */}
           <div className="screen">
             <img src={PlaywhatAIScreen} alt="playwhatai" />
+            <div className="legend">
+              OpenAI-powered video game curation app built with React/Next.js.
+              <br />
+              <br />
+              <a href="https://playwhatai.vercel.app/" target="_blank" rel="noreferrer">
+                Demo
+              </a>
+            </div>
           </div>
 
           {/* playwhat */}
           <div className="screen">
             <img src={PlaywhatScreen} alt="playwhat" />
+            <div className="legend">
+              Video game database search engine built with React/Redux/React Query.
+              <br />
+              <br />
+              <a href="https://statelessrich.github.io/playwhat/" target="_blank" rel="noreferrer">
+                Demo
+              </a>
+            </div>
           </div>
 
           {/* harmonic */}
           <div className="screen">
             <img src={HarmonicScreen} alt="harmonic financial technologies" />
+            <div className="legend">
+              Insurance quoting and policy management app built with React.
+              <br />
+              <br />
+              <a href="https://safetynetcommunity.org" target="_blank" rel="noreferrer">
+                Live
+              </a>
+            </div>
           </div>
 
           {/* snc */}
           <div className="screen">
             <img src={SNCScreen} alt="safety net community" />
+            <div className="legend">
+              Insurance quoting and policy management app built with React.
+              <br />
+              <br />
+              <a href="https://safetynetcommunity.org" target="_blank" rel="noreferrer">
+                Live
+              </a>
+            </div>
           </div>
 
           {/* fulgent */}
           <div className="screen">
             <img src={FulgentScreen} alt="fulgent" />
+            <div className="legend">Healthcare marketing website built with HTML/SASS/Gulp</div>
           </div>
 
           {/* selleration */}

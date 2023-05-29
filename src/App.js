@@ -49,7 +49,7 @@ function App() {
 
           {/* resume */}
           <a
-            href="https://drive.google.com/file/d/1q8Npw6pnbnDqtZlnEwnRAKBEUZvDAgyF/view?usp=sharing"
+            href="https://drive.google.com/file/d/1TKDeKVCyBga3zFk3QCA8lwSrRV6RQEm3/view?usp=sharing"
             className="btn text-center resume-link"
             target="_blank"
             rel="noreferrer"

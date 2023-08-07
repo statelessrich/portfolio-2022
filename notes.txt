@@ -1,0 +1,3 @@
+7/31
+added ssl cert using Lets Enrypt: https://members.nearlyfreespeech.net/faq?q=SSLCertificates#SSLCertificates
+

@@ -1,22 +1,26 @@
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowAltCircleRight, faEnvelope, faFileLines } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./app.css";
-import FulgentScreen from "./img/fulgent-screen.png";
-import SellerationScreen from "./img/selleration-screen.png";
-import HarmonicScreen from "./img/harmonic-screen.png";
-import SNCScreen from "./img/snc-screen.png";
-import TravelScreen from "./img/travel-screen.png";
 import AptensioScreen from "./img/aptensioxr-screen.png";
 import BreakawayScreen from "./img/breakaway-screen.png";
+import DiscoverLogo from "./img/discover-logo.png";
+import FulgentScreen from "./img/fulgent-screen.png";
+import HarmonicScreen from "./img/harmonic-screen.png";
+import MealzDesign from "./img/mealz-design.png";
+import MealzScreen from "./img/mealz-screen.png";
+import MetlifeLogo from "./img/metlife-logo.png";
+import MountainsDesign from "./img/mountains-design.png";
+import MountainsScreen from "./img/mountains-screen.png";
 import PlaywhatScreen from "./img/playwhat-screen.png";
 import PlaywhatAIScreen from "./img/playwhatai-screen.png";
-import VocabifyScreen from "./img/vocabify-screen.png";
 import PNCLogo from "./img/pnc-logo.png";
-import MetlifeLogo from "./img/metlife-logo.png";
 import ProgressiveLogo from "./img/progressive-logo.png";
-import DiscoverLogo from "./img/discover-logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import SellerationScreen from "./img/selleration-screen.png";
+import SNCScreen from "./img/snc-screen.png";
+import TravelScreen from "./img/travel-screen.png";
+import VocabifyScreen from "./img/vocabify-screen.png";
 
 function App() {
   return (
@@ -165,6 +169,56 @@ function App() {
           {/* travel site */}
           <div className="screen">
             <img src={TravelScreen} alt="travel site" />
+          </div>
+        </div>
+
+        {/* design to code */}
+        <div className="design-to-code">
+          <div className="design-image image-container">
+            <img src={MealzDesign} alt="mealz" />
+            <h2>Figma</h2>
+          </div>
+
+          <FontAwesomeIcon icon={faArrowAltCircleRight} />
+
+          <div>
+            <div className="screen-image image-container">
+              <img src={MealzScreen} alt="mealz" />
+              <div className="legend">
+                Landing page for a food delivery app
+                <br />
+                <br />
+                <a href="https://mealz-landing-page.vercel.app/" target="_blank" rel="noreferrer">
+                  Demo
+                </a>
+              </div>
+            </div>
+            <h2>Code</h2>
+          </div>
+        </div>
+
+        {/* design to code */}
+        <div className="design-to-code">
+          <div className="design-image image-container large">
+            <img src={MountainsDesign} alt="los angeles mountains" />
+            <h2>Photoshop</h2>
+          </div>
+
+          <FontAwesomeIcon icon={faArrowAltCircleRight} />
+
+          <div>
+            <div className="screen-image image-container large">
+              <img src={MountainsScreen} alt="los angeles mountains" />
+              <div className="legend">
+                Landing page for a tourist website
+                <br />
+                <br />
+                <a href="https://los-angeles-mountains-sepia.vercel.app/" target="_blank" rel="noreferrer">
+                  Demo
+                </a>
+              </div>
+            </div>
+            <h2>Code</h2>
           </div>
         </div>
       </div>

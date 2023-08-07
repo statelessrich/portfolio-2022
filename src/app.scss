@@ -130,19 +130,19 @@ body {
         width: 100%;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
+    }
 
-      .legend {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-        padding: 50px;
-        font-size: 1.5em;
-        font-weight: bold;
-        line-height: 1.5;
-        background-color: rgba(255, 255, 255, 0.879);
-      }
+    .legend {
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 50px;
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.5;
+      background-color: rgba(255, 255, 255, 0.879);
     }
 
     .other {
@@ -163,6 +163,46 @@ body {
           padding: 20px;
           width: 200px;
         }
+      }
+    }
+  }
+
+  .design-to-code {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+
+    .image-container {
+      margin-bottom: 20px;
+      max-width: 250px;
+      position: relative;
+
+      &.large {
+        max-width: 500px;
+      }
+
+      &:has(.legend) {
+        // blur on hover
+        &:hover,
+        &:active {
+          img {
+            filter: blur(4px);
+            cursor: pointer;
+          }
+
+          // display image legend
+          .legend {
+            display: flex;
+            top: 0;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
       }
     }
   }
